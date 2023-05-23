@@ -1,0 +1,9 @@
+CREATE SCHEMA IF NOT EXISTS mydb;
+
+--DROP TABLE mydb.dogs;
+
+CREATE TABLE IF NOT EXISTS mydb.dogs (
+   name VARCHAR(50) NOT NULL,
+   breed VARCHAR(100) ARRAY,
+   PRIMARY KEY (name)
+);
